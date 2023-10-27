@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioPhile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gradient">
+    <header>
+        <img id="logot" src=".\lolg5.png">
+    </header>
+    <div class="imgs">
+        <img id="img" src="Audio.gif">
+    </div>
+
+    <main>
+        <div class="audio-player">
+            <audio id="id" src="" controls></audio>
+        </div>
+    </main>
+    <div>
+        <ul>
+            <li id="bold" onclick="peaky1();changeBackground('gradient1')">Naa Ready(From "Leo")</li></br>
+            <li id="bold1" onclick="peaky2();changeBackground('gradient2')">Badass(From "Leo")</li></br>
+            <li id="bold2" onclick="peaky3();changeBackground('gradient3')">Puli Urumudhu(From "Vettaikaaran")</li></br>
+            <li id="bold3" onclick="peaky4();changeBackground('gradient4')">Nillu Nillu(From "Kanchana")</li></br>
+            <li id="bold4" onclick="peaky5();changeBackground('gradient5')">Hope(From "XXXTENTACION")</li></br>                            
+        
+		</ul>
+    </div>
+    <footer>
+        <p>&copy; 2023 AudioPhile</p>
+    </footer>
+    <script>
+		function changeBackground(className) {
+            document.body.className = className;
+        }
+        function peaky1()
+        {
+            document.getElementById("id").src="Naa Ready.mp3";
+            document.getElementById("img").src="Naa.jpg";
+            document.getElementById("bold").style.fontWeight="bold";
+            document.getElementById("bold1").style.fontWeight="";
+            document.getElementById("bold2").style.fontWeight="";
+            document.getElementById("bold3").style.fontWeight="";
+            document.getElementById("bold4").style.fontWeight="";
+        }
+        function peaky2()
+        {
+            document.getElementById("id").src="Badass.mp3";
+            document.getElementById("img").src="Leo.jpg";
+            document.getElementById("bold1").style.fontWeight="bold";
+            document.getElementById("bold").style.fontWeight="";
+            document.getElementById("bold2").style.fontWeight="";
+            document.getElementById("bold3").style.fontWeight="";
+            document.getElementById("bold4").style.fontWeight="";
+
+        }
+        function peaky3()
+        {
+            document.getElementById("id").src="Puli.mp3";
+            document.getElementById("img").src="Puli.jpg";
+            document.getElementById("bold2").style.fontWeight="bold";
+            document.getElementById("bold1").style.fontWeight="";
+            document.getElementById("bold").style.fontWeight="";
+            document.getElementById("bold3").style.fontWeight="";
+            document.getElementById("bold4").style.fontWeight="";
+
+        }
+        function peaky4()
+        {
+            document.getElementById("id").src="Nillu Nillu.mp3";
+            document.getElementById("img").src="Kanjachana.jpg";
+            document.getElementById("bold3").style.fontWeight="bold";
+            document.getElementById("bold1").style.fontWeight="";
+            document.getElementById("bold2").style.fontWeight="";
+            document.getElementById("bold").style.fontWeight="";
+            document.getElementById("bold4").style.fontWeight="";
+
+        }
+        function peaky5()
+        {
+            document.getElementById("id").src="xxx.mp3";
+            document.getElementById("img").src="xxxtentacion.jpg";
+            document.getElementById("bold4").style.fontWeight="bold";
+            document.getElementById("bold1").style.fontWeight="";
+            document.getElementById("bold2").style.fontWeight="";
+            document.getElementById("bold").style.fontWeight="";
+            document.getElementById("bold3").style.fontWeight="";
+
+        }
+
+    </script>
+</body>
+</html>
